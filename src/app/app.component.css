@@ -1,5 +1,7 @@
 
 .header {
+    width: 70%;
+    margin: 0 auto;
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
@@ -7,6 +9,130 @@
     color: #ffffff;
     padding: 2rem;
 }
+
+.task-container {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid teal;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 99%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.text-input {
+    display: block;
+    width: 60%;
+    /* min-width: 200px; */
+    height: 40px;
+    border-radius: 5px;
+    outline: teal;
+}
+
+input[type=text] {
+    border: 2px solid teal!important;
+    color: grey!important;
+    padding-left: 10px;
+}
+
+input[type=text]:focus {
+  border: 3px solid teal!important;
+}
+
+.submit-input {
+    width: 20%;
+    min-width: 100px;
+    height: 40px;
+    color: #ffffff;
+    background: teal;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.submit-input:hover {
+    color: teal;
+    background: #fff;
+    border: 2px solid teal;
+}
+
+.task-card-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.task-card-container-a,
+.task-card-container-b {
+    width: 45%;
+}
+
+.task-item {
+    position: relative;
+    display: block;
+    height: 40px;
+    margin: 1rem auto;
+    border: 2px solid grey;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.task-item p {
+    position: relative;
+    font-weight: bold;
+    top: 6px;
+}
+
+.delete {
+    position: relative;
+    bottom: 13px;
+    right: 10px;
+    display: block;
+    font-size: larger;
+    font-weight: bolder;
+    text-align: end;
+    color: #ff0000;
+}
+
+@media all and (max-width: 500px) {
+    .header, .task-container{
+        width: 100%;
+    }
+   .input-container{
+        display: block;
+    }
+   .text-input {
+       display: block;
+       width: 80%;
+       margin: 10px auto;
+   }
+
+   .submit-input {
+     display: block;
+     width: 50%;
+     margin: 10px auto;
+   }
+   .task-card-container {
+     display: block;
+     width: 95%;
+   }
+
+   .task-card-container-a,
+   .task-card-container-b {
+     width: 80%;
+     margin: 0 auto;
+   }
+}
+
 
 
 
